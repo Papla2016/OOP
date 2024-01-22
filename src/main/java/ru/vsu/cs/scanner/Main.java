@@ -1,4 +1,4 @@
-package org.example;
+package ru.vsu.cs.scanner;
 
 import java.util.List;
 

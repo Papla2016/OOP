@@ -1,5 +1,4 @@
-package org.example;
-import org.example.FileReturn;
+package ru.vsu.cs.scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.*;
@@ -7,7 +6,7 @@ import java.util.*;
 /**
  * Class for searching text in files
  */
-public class Search<E> {
+public class Search {
     private String searchString;
     private String sourceDirectory = "C:\\";
     private boolean subDirecotry = true;
@@ -20,7 +19,7 @@ public class Search<E> {
      * @param subDirecotry Boolean option to search in subDirectories
      * @param flag types of file with whom function will open
      */
-    Search(String searchString, String sourceDirectory,boolean subDirecotry, List<String> flag){
+    public Search(String searchString, String sourceDirectory,boolean subDirecotry, List<String> flag){
         this.searchString = searchString;
         this.sourceDirectory = sourceDirectory;
         this.subDirecotry = subDirecotry;
@@ -31,7 +30,7 @@ public class Search<E> {
      * @param searchString the string to be found
      * @param sourceDirectory Start directory
      */
-    Search(String searchString,String sourceDirectory){
+    public Search(String searchString,String sourceDirectory){
         this.searchString = searchString;
         this.sourceDirectory = sourceDirectory;
     }
@@ -39,7 +38,7 @@ public class Search<E> {
      * Constructor for searching
      * @param searchString the string to be found
      */
-    Search(String searchString){
+    public Search(String searchString){
         this.searchString = searchString;
     }
 
@@ -107,7 +106,7 @@ public class Search<E> {
             return new FileReturn(fileDirectory);
             /*
             Как ты вообще сюда забрался?
-             */
+            */
         }
 
     }

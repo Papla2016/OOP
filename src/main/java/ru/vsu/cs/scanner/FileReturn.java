@@ -1,4 +1,4 @@
-package org.example;
+package ru.vsu.cs.scanner;
 
 
 import java.io.File;
@@ -49,6 +49,7 @@ public class FileReturn {
     public String getFileName(){return fileName;}
     public String getDirectory(){return directory;}
     public HashMap<Integer,String> getFoundedStrings(){return foundedStrings;}
+    public int getCount(){return foundedStrings.size();}
     public void print(){
         System.out.printf("File Name: %s \n",fileName);
         System.out.printf("Directory: %s \n",directory);
